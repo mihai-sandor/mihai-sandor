@@ -106,3 +106,21 @@ main {
 .scrolled-offset {
   margin-top: 80px;
 }
+
+/* Footer social icons */
+.social-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+footer {
+  padding: 30px 20px;
+}
