@@ -1,0 +1,108 @@
+body {
+  background-color:#fbfadaff;
+  font-family: "Tai Heritage Pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#12372aff ;
+}
+/* Google fonts
+.tai-heritage-pro-regular {
+  font-family: "Tai Heritage Pro", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tai-heritage-pro-bold {
+  font-family: "Tai Heritage Pro", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+*/
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #adbc9fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 85px;
+  height: 100px;
+  border-radius: 10%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background-color: #d4dbbdff;
+}
+.logo-container a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px
+}
+
+.logo {
+  font-family: "Tai Heritage Pro", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #12372aff;
+  margin: 0;
+  font-size: 30px;
+}
+.logo:hover {
+  color: #436850ff;
+  opacity: 0.8;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Tai Heritage Pro", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #12372aff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #436850ff;
+  opacity: 0.8;
+}
+
+main {
+  margin-top: 150px;
+}
+
+.scrolled-offset {
+  margin-top: 80px;
+}
