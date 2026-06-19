@@ -1,8 +1,22 @@
+/* Culori globale */
+:root {
+    --bg-color:#eae0cfff;
+    --card-bg: #ffffff;
+    --primary-color: #111844ff;
+    --accent-color: #4b5694ff;
+    --accent-hover: #7288aeff;
+    --text-color: #2e376cff;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --nav-bg: rgba(30, 41, 59, 0.95);
+}
+/* Reset general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Face ca scroll sa fie lin */
 html {
     scroll-behavior: smooth; 
 }
@@ -11,4 +25,45 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
+}
+/* Bara de navigatie va fi prezenta in permanenta*/
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #fff;
 }
