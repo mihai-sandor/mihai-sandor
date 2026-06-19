@@ -200,3 +200,19 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
+.project-box {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-box:last-child {
+    border-bottom: none;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
