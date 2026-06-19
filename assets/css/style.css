@@ -264,3 +264,53 @@ body {
 .education-list li {
     margin-bottom: 10px;
 }
+footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Dispozitive de marime medie (Tablete) */
+@media (max-width: 850px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .contact-info {
+        justify-content: center;
+    }
+
+    .two-col-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Telefoane Mobile Standard */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .section-card {
+        padding: 20px;
+    }
+}
