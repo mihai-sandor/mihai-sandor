@@ -3,7 +3,7 @@
     --bg-color:#eae0cfff;
     --card-bg: #ffffff;
     --primary-color: #111844ff;
-    --accent-color: #4b5694ff;
+    --accent-color: rgb(99, 117, 217);
     --accent-hover: #7288aeff;
     --text-color: #2e376cff;
     --text-muted: #64748b;
@@ -215,4 +215,40 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+}
+/* --- Istoric Timeline --- */
+.timeline {
+    border-left: 3px solid var(--border-color);
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.timeline-company {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-weight: 600;
 }
