@@ -252,3 +252,15 @@ body {
     margin-bottom: 8px;
     font-weight: 600;
 }
+.compact-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.education-list {
+    padding-left: 20px;
+}
+
+.education-list li {
+    margin-bottom: 10px;
+}
