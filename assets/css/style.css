@@ -71,7 +71,7 @@ body {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 10px;
 }
 .hero {
     background: linear-gradient(60deg, var(--primary-color) 0%, #5f7fc9 100%);
@@ -274,7 +274,7 @@ footer {
 /* Dispozitive de marime medie (Tablete) */
 @media (max-width: 850px) {
     .hero-content {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
     }
     
@@ -312,5 +312,72 @@ footer {
     
     .section-card {
         padding: 20px;
+    }
+}
+/* EXTREM DE MIC */
+@media (max-width: 320px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .nav-links {
+        gap: 8px; 
+    }
+    
+    .nav-links a {
+        font-size: 0.8rem; 
+    }
+
+    .hero {
+        padding: 30px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .hero-image img {
+        width: 120px; 
+        height: 150px;
+    }
+
+    .contact-info {
+        flex-direction: column; 
+        align-items: center;
+        gap: 5px;
+    }
+
+    .btn-download {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        width: 100%; 
+        text-align: center;
+    }
+
+    .section-card {
+        padding: 15px; 
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; 
+    }
+    
+    .timeline {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+
+    .timeline-item::before {
+        left: -24px;
+        width: 12px;
+        height: 12px;
     }
 }
