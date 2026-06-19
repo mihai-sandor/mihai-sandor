@@ -143,3 +143,60 @@ body {
     font-weight: 600;
     transition: 0.3s;
 }
+/* --- Layout Principal --- */
+.section-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    border: 1px solid var(--border-color);
+    scroll-margin-top: 80px; 
+}
+.section-title {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.section-title i {
+    color: var(--accent-color);
+    margin-right: 8px;
+}
+/* --- Grids (Competente & Proiecte) --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.skill-category h4 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.tech-list {
+    list-style: none;
+}
+
+.tech-list li {
+    margin-bottom: 10px;
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tech-list i {
+    font-size: 1.2rem;
+}
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
